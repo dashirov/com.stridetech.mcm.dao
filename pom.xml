@@ -33,8 +33,8 @@
 
     <repositories>
         <repository>
-            <id>central-proxy</id>
-            <url>https://nexus.stridetech.com:8443/repository/maven-public/</url>
+            <id>central</id>
+            <url>http://repo1.maven.org/maven2/</url>
         </repository>
     </repositories>
 
@@ -83,6 +83,7 @@
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m5.1</version>
                 <configuration>
+                    <enableSshAgent>true</enableSshAgent>
                     <!-- see goals wiki page for configuration options -->
                 </configuration>
             </plugin>
